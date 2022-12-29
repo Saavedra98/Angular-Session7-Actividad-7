@@ -12,7 +12,19 @@ export class DadoComponent {
   alazar(){
 
     this.numRandom = Math.floor((Math.random()*(6-1+1))+1);
-    this.numero =  this.numRandom;
+
+      if(this.numero == this.numRandom ){
+        alert("Se repite");
+        // alert("numero anterior: " + this.numero + "    Numero que va salir: " + this.numRandom + " Se repite");
+        this.alazar();
+      }else{
+        this.numero =  this.numRandom;
+    }
+
+    
+    
+
+    
   }
 
 
