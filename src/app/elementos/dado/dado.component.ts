@@ -7,4 +7,13 @@ import { Component } from '@angular/core';
 })
 export class DadoComponent {
   numero: number = 0;
+  numRandom!: number;
+ 
+  alazar(){
+
+    this.numRandom = Math.floor((Math.random()*(6-1+1))+1);
+    this.numero =  this.numRandom;
+  }
+
+
 }
